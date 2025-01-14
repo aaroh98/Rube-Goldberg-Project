@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rube Goldberg Machine Project</title>
     <style>
+        /* Body Styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -12,35 +13,95 @@
             padding: 0;
             line-height: 1.6;
         }
+
+        /* Header Styles */
         header {
             background-color: #2c3e50;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
+        /* Container Styles */
         .container {
             width: 80%;
             margin: auto;
             padding: 20px;
         }
+
+        /* Heading Styles */
         h2, h3 {
             color: #2c3e50;
         }
+
+        /* Section Styles */
         .section {
             background-color: white;
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        /* List Styles */
         .requirements-list {
             list-style-type: none;
             padding-left: 0;
         }
+
         .requirements-list li {
             padding: 8px;
             background-color: #ecf0f1;
             margin-bottom: 10px;
         }
+
+        /* Carousel Styles */
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .carousel img {
+            width: 300px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            border: 3px solid transparent;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.2);
+            border-color: #3498db;
+        }
+
+        .carousel img.active {
+            transform: scale(1.5);
+            border-color: #e74c3c;
+        }
+
+        .carousel img.active:hover {
+            transform: scale(1.6);
+        }
+
+        /* Carousel Zoom Styles */
+        .carousel-zoom img {
+            width: 250px;
+            height: auto;
+            transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            border: 3px solid transparent;
+        }
+
+        .carousel-zoom img:hover {
+            transform: scale(1.3);
+            border-color: #3498db;
+        }
+
+        .carousel-zoom img.active {
+            transform: scale(1.6);
+            border-color: #e74c3c;
+        }
+
+        /* Image Float Styles */
         .right-image {
             float: right;
             margin-left: 20px;
@@ -55,15 +116,16 @@
             max-width: 100%;
             height: auto;
         }
-	
-	.domino-image-small {
-    		float: left;
-  		  margin-left: 20px;
-   		 margin-bottom: 20px;
-   		 max-width: 25%;
-    		height: auto;
-	}
 
+        .left-image-small {
+            float: left;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            max-width: 22%;
+            height: auto;
+        }
+
+        /* Media Query for Smaller Screens */
         @media (max-width: 768px) {
             .right-image {
                 float: none;
@@ -75,6 +137,9 @@
     </style>
 </head>
 <body>
+</body>
+</html>
+
 
     <header>
         <h1>Rube Goldberg Machine Project</h1>
@@ -135,20 +200,319 @@
             <p>Three of these mechanisms are explored in detail below:</p>
 
             <h3>Domino Knockdown Mechanism</h3>
-            <img src="https://content.instructables.com/FZ8/2KLE/IUYD2BQN/FZ82KLEIUYD2BQN.jpg" alt="Domino Knockdown Mechanism" class="domino-image-small">
+            <img src="https://content.instructables.com/FZ8/2KLE/IUYD2BQN/FZ82KLEIUYD2BQN.jpg" alt="Domino Knockdown Mechanism" class="left-image-small">
             <p>A popular subassembly in Rube Goldberg machines involves a series of dominoes that, when knocked down in sequence, trigger the next action.</p>
 	    <p>The dominos are usually made of wood, plastic, or metal, with uniform size and weight. The mechanism relies on the principle of potential energy stored 
-in the standing dominoes, which is converted into kinetic energy when the first domino is pushed over. This energy transfer creates a chain reaction, knocking down the 
-entire series in a mesmerizing display.<p><p> The mechanism is versatile and can serve as a transitional phase in a Rube Goldberg machine, where the falling dominoes trigger 
-subsequent actions like hitting a lever, pressing a button, or releasing a ball.<p>
+		in the standing dominoes, which is converted into kinetic energy when the first domino is pushed over. This energy transfer creates a chain reaction, knocking down the 
+		entire series in a mesmerizing display.<p><p> The mechanism is versatile and can serve as a transitional phase in a Rube Goldberg machine, where the falling dominoes trigger 
+		subsequent actions like hitting a lever, pressing a button, or releasing a ball.<p>
 	&nbsp
 	&nbsp
-<h3>Ball Drop Mechanism</h3>
-            <h3>Pulley System Mechanism</h3>
-            <p>A pulley system is a common mechanism used to change the direction of force and move objects within a Rube Goldberg machine. Pulleys can be used to lift or lower objects or to transfer force across different parts of the machine. A simple pulley system may consist of a rope and a wheel, with the rope moving over the wheel to lift an object. When integrated into a larger system, pulleys can be used in tandem with other mechanisms like levers and ramps to create smooth transitions and ensure that force is transmitted across the machine with minimal friction.</p>
-        </section>
+		<h3>Ball Drop Mechanism</h3>
+            <img src="https://www.eliwhitney.org/sites/default/files/styles/span-2/public/rube.jpg?itok=eOu0wl-D%22" alt="Ball Drop Mechanism" class="right-image">
+            <p>The Ball Drop Mechanism is a dynamic and versatile component commonly featured in Rube Goldberg machines, valued for its ability to trigger subsequent actions 
+            with precision and energy. This mechanism typically involves releasing a ball from a height, allowing gravity to accelerate it down a track, chute, or free fall onto a 
+            target. The ball's motion can activate a wide variety of outcomes, such as striking a lever, knocking over dominos, or hitting a switch. The design capitalizes on 
+            gravitational potential energy, which is converted into kinetic energy as the ball descends.</p>
+            <p>Key design considerations include the size, weight, and material of the ball, as these factors influence its speed and impact force. Additionally, the track or chute must 
+            be designed to minimize friction and ensure a smooth, controlled descent. This mechanism's adaptability allows it to be incorporated into various stages of the machine, 
+            serving as both a transition and an action initiator.</p>
+        
 
+          <h3>Pulley System Mechanism</h3>
+            <img src="https://cdn.britannica.com/09/6709-050-AED3F7B5/Block-tackle.jpg" alt="Pulley system" class="left-image-small">
+            <p>The Pulley System Mechanism is a fundamental and versatile component in Rube Goldberg machines, widely appreciated for its ability to transfer force, alter the direction of 
+		motion, and create dynamic chain reactions. This mechanism consists of one or more wheels with a grooved edge, over which a rope, cable, or belt is looped. Pulleys can be arranged in 
+		single or multiple configurations, depending on the desired effect, such as lifting a weight, triggering a lever, or controlling the movement of another component. The pulley system 
+		operates on the principles of mechanical advantage, using tension in the rope to transmit force efficiently and redirect energy flow within the machine.</p>
+		<p>Key design factors include the size and material of the pulley, the type of rope or cable used, and the alignment of components to ensure smooth operation. A well-designed 
+		pulley system can amplify force, reduce friction, and provide precise control over the timing and movement of interconnected elements.<p>
+      
+
+ </section>
+
+<section class="section">
+    <h2>Design Requirements</h2>
+    <p>The design of the Rube Goldberg machine subassembly must meet the following specifications, addressing the needs of various stakeholders:</p>
+    <ul class="requirements-list">
+        <li>The subassembly must receive an input force of at least 2 N from the preceding subassembly and output a force of at least 1.5 N to the next subassembly.</li>
+        <li>The subassembly must transfer at least 90% of input energy, minimizing energy loss through friction or inefficiency.</li>
+        <li>The subassembly must be completed and fully functional by the project deadline, which is the end of the term.</li>
+        <li>The subassembly must operate continuously without failure or stalling for the duration of its function.</li>
+        <li>Materials used must have a tensile strength of at least 50 MPa to ensure durability under normal operational loads.</li>
+        <li>The subassembly must include at least one moving component to enhance its visual appeal.</li>
+        <li>The subassembly must demonstrate at least two mechanical principles (e.g., force transfer or simple machines) through interactive components.</li>
+        <li>The subassembly should be producible for no more than $100 per unit.</li>
+        <li>The subassembly's documentation must clearly describe the design process and engineering principles with 90% accuracy.</li>
+    </ul>
+    <p>By addressing these specifications, the subassembly ensures functionality, durability, educational value, and cost-effectiveness while meeting the diverse expectations of stakeholders.</p>
+</section>
+
+<section class="section">
+    <h2>List of Functions</h2>
+    <p>The following list outlines the sequence of functions performed by the subassembly prepared using Stone's Taxonomy:</p>
+    <ol class="functions-list">
+        <li><strong>Receiving Force:</strong> Receive force from a preceding subassembly.</li>
+        <li><strong>Measure the Force:</strong> Using a measurement device, measure the force and convert it into electrical data.</li>
+        <li><strong>Create Rotational Motion:</strong> Use the force data to create rotational motion of equivalent magnitude.</li>
+        <li><strong>Create Potential Energy:</strong> Use the rotational motion to load a mechanism storing potential energy (e.g., spring).</li>
+        <li><strong>Release Stored Energy:</strong> Release the stored energy and create guided linear motion.</li>
+        <li><strong>Trigger the Activation of a Simple Machine:</strong> Use the linear motion to trigger a simple machine (e.g., pulley) to change the direction of the force.</li>
+        <li><strong>Use Force to Set in Motion Guided Linear Motion:</strong> Direct the force to initiate guided linear motion through the system.</li>
+        <li><strong>Trigger Switch to an Electrical Device:</strong> Use the linear motion to activate a switch for an electrical device.</li>
+        <li><strong>Generate Force:</strong> Use mechanical or electrical means to generate force required for further motion.</li>
+        <li><strong>Pass the Force Along to the Next Subassembly:</strong> Transfer the force generated to the subsequent subassembly for continued operation.</li>
+    </ol>
+    <p>This list ensures that each functional step is captured and clearly communicated as part of the larger system design.</p>
+<a href="https://ibb.co/yfYm45Q"><img src="https://i.ibb.co/NVmgTpy/sse.jpg" alt="sse" border="0"></a>
+</section>
+
+<section class="section">
+    <h2>Design Concept Generation</h2>
+	<p>In order to come up with a final functional design, multiple design sketches were made using the functional and design requirements.<p>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="https://i.postimg.cc/h43MqwTc/1.jpg" alt="Design Concept 1" class="carousel-image">
+            <img src="https://i.postimg.cc/FsMZYLT6/2.jpg" alt="Design Concept 2" class="carousel-image">
+            <img src="https://i.postimg.cc/dVG9rVXV/3.jpg" alt="Design Concept 3" class="carousel-image">
+            <img src="https://i.postimg.cc/wBHQVd8c/4.jpg" alt="Design Concept 4" class="carousel-image">
+            <img src="https://i.postimg.cc/R0RQpbvr/5.jpg" alt="Design Concept 5" class="carousel-image">
+            <img src="https://i.postimg.cc/DZwQ9dzS/6.jpg" alt="Design Concept 6" class="carousel-image">
+            <img src="https://i.postimg.cc/nzSKpjs0/8.jpg" alt="Design Concept 7" class="carousel-image">
+            <img src="https://i.postimg.cc/Rh37FSK9/9.jpg" alt="Design Concept 8" class="carousel-image">
+        </div>
     </div>
 
+
+<style>
+    .carousel-container {
+        overflow: hidden;
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .carousel {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .carousel-image {
+        max-width: 100%;
+        max-height: 300px;
+        margin-right: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .carousel-image:hover {
+        transform: scale(1.1);
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carousel-container::after {
+        content: 'Scroll through the images';
+        display: block;
+        font-style: italic;
+        color: #555;
+        margin-top: 10px;
+    }
+
+</style>
+
+<p> After a pugh chart based analysis on the design concepts a mallet based output delivery system was selected.<p>
+<img src="https://i.postimg.cc/7hfStHZd/pugh.jpg" alt="pugh chart" class="bottom-image">
+</section>
+
+      <section class="section">
+            <h2>STEM analysis</h2>
+<p>Before the design can proceed to futher CAD-ing stage, an anlysis based on the STEM prinicples was undertaken. The results are displayed below:<p>
+<div class="carousel" id="imageCarousel">
+                <img src="https://i.postimg.cc/yN1vKS6S/a.jpg" alt="Pulley system" class="carousel-image">
+                <img src="https://i.postimg.cc/7LKXZYbt/b.jpg" alt="Ball Drop Mechanism" class="carousel-image">
+                <img src="https://i.postimg.cc/FR1pd5Lr/c.jpg" alt="Domino Knockdown Mechanism" class="carousel-image">
+            </div>
+<p>The analyses were further verfied by the other students in the class via a discussion board.<p>
+  </section>
+<script>
+    const images = document.querySelectorAll('.carousel img');
+
+    images.forEach((image) => {
+        image.addEventListener('click', () => {
+            images.forEach((img) => img.classList.remove('active'));
+            image.classList.add('active');
+        });
+    });
+</script>
+
+
+<section class="section">
+    <h2>Final Sub-Assembly Design</h2>
+    <p>After taking all the design analyses into consideration, a CAD model was created for the subassembly.</p>
+    <img src="https://i.postimg.cc/VkrzRdPn/finasssemmb.jpg" alt="pugh chart" class="bottom-image"> 
+    <section class="section">
+        <div class="carousel-zoom">
+            <img src="https://i.postimg.cc/02rzT5q2/c1.jpg" alt="Button" class="carousel-item">
+            <img src="https://i.postimg.cc/HsKrdGp0/c2.jpg" alt="Domino" class="carousel-item">
+            <img src="https://i.postimg.cc/7LrbJgJf/c3.jpg" alt="Funnel Stand" class="carousel-item">
+            <img src="https://i.postimg.cc/TPj1VpnQ/c4.jpg" alt="funnel" class="carousel-item">
+            <img src="https://i.postimg.cc/bJzJ3pTP/c5.jpg" alt="release mechanism" class="carousel-item">
+            <img src="https://i.postimg.cc/RFX0YysH/c6.jpg" alt="mallet" class="carousel-item">
+            <img src="https://i.postimg.cc/j21SxNrq/c7.jpg" alt="rails" class="carousel-item">
+            <img src="https://i.postimg.cc/CMr1syfy/c8.jpg" alt="wedge" class="carousel-item">
+        </div>
+    </section>
+</section>
+
+<div class="fullscreen-modal" id="fullscreen-modal">
+    <button class="close-modal" id="close-modal">&times;</button>
+    <img src="" id="fullscreen-image" alt="Fullscreen Image">
+</div>
+
+<script>
+    // Hover zoom effect on carousel images
+    const zoomImages = document.querySelectorAll('.carousel-zoom img');
+    zoomImages.forEach((image) => {
+        image.addEventListener('mouseover', () => {
+            image.style.transform = 'scale(1.2)';
+            image.style.transition = 'transform 0.3s ease';
+        });
+
+        image.addEventListener('mouseout', () => {
+            image.style.transform = 'scale(1)';
+        });
+    });
+
+    const carouselZoomImages = document.querySelectorAll('.carousel-zoom img');
+    const fullscreenModal = document.getElementById('fullscreen-modal');
+    const fullscreenImage = document.getElementById('fullscreen-image');
+    const closeModal = document.getElementById('close-modal');
+
+    carouselZoomImages.forEach(img => {
+        img.addEventListener('click', function () {
+            fullscreenModal.style.display = 'flex';
+            fullscreenImage.src = img.src;
+        });
+    });
+
+    closeModal.addEventListener('click', function () {
+        fullscreenModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (e) {
+        if (e.target === fullscreenModal) {
+            fullscreenModal.style.display = 'none';
+        }
+    });
+</script>
+
+<style>
+    .fullscreen-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .fullscreen-modal img {
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .carousel-zoom img {
+        transition: transform 0.3s ease;
+    }
+</style>
+  </section>
+
+
+ <section class="section">
+    <h2>Reflection on the Design Project</h2>
+    <p><strong>Initial Concept Development:</strong> The first step in my project was brainstorming ideas for my part of the Rube Goldberg machine. I realized early on that it was easy to focus on individual components—like motors, levers, or pulleys—rather than the functions each part was supposed to serve. I spent a lot of time thinking about how energy would transfer, how movement would be triggered, and how each step would interact with the next. This process was challenging, but it pushed me to think about the system as a whole, not just as a collection of parts. Sketching the components helped, but it was more helpful to focus on their roles and how they would contribute to the larger design.</p>
+
+    <p><strong>Iterating the Design Based on Inputs/Outputs:</strong> Once I had a rough idea of how the subassembly would work, I needed to make sure each part’s input and output lined up with the rest of the system. Having a list of functional requirements definitely helped with this. Creating multiple functional designs and then later weeding them out to get the best one was the best strategy for this.</p>
+
+    <p><strong>Modeling/CAD:</strong> Coming into the project with basic CAD skills, I found the modeling phase to be the most challenging part of the process. Although I had a rough concept of how the parts would fit together, translating that into precise CAD models required a lot of attention to detail and problem-solving. The CAD models were invaluable because they allowed me to visualize the design in three dimensions, providing insights that weren’t obvious in the initial sketches. For example, I was able to identify areas where the components might not fit together physically or where there could be clearance issues. This visualization also helped me understand which sections of the design would work well in the real world and which needed adjustments. CAD gave me the chance to refine my ideas before committing to building the physical system, reducing the likelihood of errors during the fabrication phase. The modeling process also highlighted areas where I could simplify or optimize the design, making it more practical and efficient. While challenging, this phase helped me to make informed decisions and avoid costly mistakes during the prototyping phase.</p>
+</section>
+
+<section class="section">
+    <h2>Recommendations</h2>
+    <p><strong>Focus on Functional Mapping from the Start:</strong> One of the most significant lessons I learned during this project is the 
+importance of starting with a clear focus on the functions of the system before diving into component selection. In future projects, I recommend 
+prioritizing functional mapping during the concept development phase. This means determining how energy will transfer, what each step will achieve, 
+and how each part interacts with others before deciding on the components.</p>
+    <p>To improve this in future projects, I would begin by sketching a functional flowchart to represent the sequence of actions and energy 
+transfers in the system. I would then build the components based on the functional requirements, not simply component availability or preference. 
+This approach will help ensure that each component directly contributes to achieving the system's goals, minimizing the need for major revisions later in the design process.</p>
+
+    <h2>1. Focus on Functional Mapping from the Start</h2>
+    <p>One of the most significant lessons I learned during this project is the importance of starting with a clear focus on the functions of the system before diving into detailed design or simulation.</p>
+    <ul>
+        <li><strong>Recommendation:</strong> Prioritize functional mapping during the concept development phase. Determine energy transfer pathways, define what each step will achieve, and understand how each part interacts with others before progressing to simulations or virtual modeling.</li>
+        <li><strong>Implementation:</strong> Begin by sketching a functional flowchart to represent the sequence of actions and energy transfers in the system. Use this flowchart to guide virtual design decisions and ensure every aspect of the system fulfills the intended functions.</li>
+    </ul>
+
+    <h2>2. Develop Virtual Subsystem Simulations</h2>
+    <p>While physical prototypes weren’t required, testing and refining virtual subsystems during the design phase can help identify issues early.</p>
+    <ul>
+        <li><strong>Recommendation:</strong> Create virtual subsystem models and simulate their functionality before integrating them into the full system.</li>
+        <li><strong>Implementation:</strong> Use virtual modeling tools to build simplified subsystem models that allow for quick simulations and testing. Validate their performance within isolated environments before incorporating them into the larger virtual system.</li>
+    </ul>
+
+    <h2>3. Invest More Time in CAD Modeling and Simulation</h2>
+    <p>Although CAD modeling and simulation were part of the process, dedicating additional time to refining virtual models could improve results.</p>
+    <ul>
+        <li><strong>Recommendation:</strong> Dedicate more time to creating detailed CAD models and performing simulations to identify potential design flaws.</li>
+        <li><strong>Implementation:</strong> Develop detailed CAD models for each component, including virtual simulations to test factors such as energy transfer, motion, and timing. Use these models to predict system behavior and iterate on designs before full integration.</li>
+    </ul>
+
+    <h2>4. Establish a Formal Testing Protocol for Virtual Systems</h2>
+    <p>Without a structured virtual testing protocol, identifying and resolving issues can become challenging.</p>
+    <ul>
+        <li><strong>Recommendation:</strong> Implement a formalized virtual testing process where each subsystem is thoroughly evaluated before full integration.</li>
+        <li><strong>Implementation:</strong> Create a testing schedule that specifies the exact inputs, expected outputs, and performance benchmarks for each virtual subsystem. Document results after every virtual simulation, identifying discrepancies and making necessary adjustments before integration.</li>
+    </ul>
+
+    <h2>5. Improve Documentation and Communication</h2>
+    <p>While documentation was maintained during the project, better organization and more frequent updates would have improved clarity and collaboration.</p>
+    <ul>
+        <li><strong>Recommendation:</strong> Establish a consistent documentation strategy that includes detailed design logs, simulation outcomes, and iteration histories.</li>
+        <li><strong>Implementation:</strong> Use shared tools or platforms to track project progress and design changes. Document key decisions, simulation results, and system integration challenges in detail for future reference.</li>
+    </ul>
+
+    <h2>6. Prioritize Time Management and Scheduling</h2>
+    <p>Time management played a critical role in balancing design, simulation, and troubleshooting.</p>
+    <ul>
+        <li><strong>Recommendation:</strong> Create a more structured timeline with accurate estimates for each project phase.</li>
+        <li><strong>Implementation:</strong> Develop a detailed timeline with specific goals for virtual design, modeling, and simulation phases. Build in buffers for unexpected challenges and conduct regular progress reviews to ensure deadlines are met.</li>
+    </ul>
+
+    <h2>7. Consider Collaboration and Peer Review</h2>
+    <p>Collaboration with peers can offer valuable insights and alternative solutions.</p>
+    <ul>
+        <li><strong>Recommendation:</strong> Incorporate regular peer reviews or team discussions to gather feedback on virtual designs, simulations, and system functionality.</li>
+        <li><strong>Implementation:</strong> Schedule regular virtual check-ins with team members or mentors to discuss progress and challenges. Allocate time for peer reviews at critical stages, such as after completing CAD models or virtual testing, to leverage diverse expertise.</li>
+    </ul>
 </body>
 </html>
